@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: rgb(33, 34, 34);
+    text-decoration: none;
+    
+}
+.menu ul li{
+    display: flex;
+    justify-content: center;
+    padding: 2vh;
+}
+.menu ul li a{
+    position: absolute;
+    text-decoration: none;
+    color: cornsilk;
+    font-size: 4vh;
+    letter-spacing: 0.2vw;
+    background-color: mediumturquoise;
+    padding: 1vh 2vw;
+    transition: 0.5s;
+}
+.menu ul li a:hover{
+    opacity: 1;
+    z-index: 10;
+    transform: scale(1.2);
+    background-color:red ;
+}
+ul:hover li a{
+    opacity: 0.05;
+}
+ul li:before{
+    content: attr(text);
+    font-size: 15vh;
+    position: relative;
+    opacity: 0;
+    letter-spacing: 10px;
+    transition: 1s;
+    color: white;
+    transition: 1s;
+}
+ul li:hover:before{
+    opacity: 0.1;
+
+
+}
+
+
+
+
+
+
+
+
