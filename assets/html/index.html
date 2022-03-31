@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v4.7.0/css/allcss">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="assets/java/main.js"></script>
 </head>
 <body>
@@ -199,25 +200,43 @@
                     </div>
                 </div>
                 <div class="contactform">
-                    <form>
+                    <form onsubmit="sendEmail(); reset(); return false;">
                         <h2>Envoyer un Message</h2>
                         <div class="inputbox">
-                            <input type="text" name="" required="required">
+                            <input type="text" id="Nom" name="Nom" required="required">
                             <span>Nom Prénom</span>
                         </div>
                         <div class="inputbox">
-                            <input type="text" name="" required="required">
+                            <input type="text" id="Email" name="Email" required="required">
                             <span>Email</span>
                         </div>
                         <div class="inputbox">
-                            <textarea required="required"></textarea>
+                            <textarea id="Message" name="Message" required="required"></textarea>
                             <span>Message</span>
                         </div>
                         <div class="inputbox">
-                            <input type="submit" name="" value="Envoyer" onclick="envoyer();">
+                            <input type="submit" name="" value="Envoyer">
                             
                         </div>
                     </form>
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <script>
+                        function sendEmail(){
+                            Email.send({
+                                Host : "smtp.gmail.com",
+                                Username : "Thierryber64@gmail.com",
+                                Password : "296F2776BD8E75DE91E189315099A23D5D88",
+                                To : 'Thierryber64@gmail.com',
+                                From : document.getElementById("Email").value,
+                                Subject : "Message du site internet",
+                                Body : "Name:" + document.getElementById("Nom").value
+                                        + "<br> Email:" + document.getElementById("Email").value
+                                        + "<br> Message:" + document.getElementById("Message").value
+                            }).then(
+                            message => alert("Le message a bien été envoyé merci.")
+                            );
+                        }
+                    </script>
                 </div>
             </div>
         </section>
