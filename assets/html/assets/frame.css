@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #222;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.container .mot{
+    position: relative;
+    transform-style: preserve-3d;
+    animation: animate 20s linear infinite ;
+}
+.container .mot .box{
+    position: relative;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0px;
+    transform: rotateX(calc(var(--i) * 40deg)) translateZ(200px) perspective(1000px);
+    
+
+}
+@keyframes animate{
+    0%{
+        transform: perspective(1000px) rotateX(360deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateX(0deg);
+    }
+}
+.container .mot .box span{
+    position: relative;
+    color: #fff;
+    font-size: 3.5em;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 0 10px;
+    transform-style: preserve-3d;
+    text-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    
+}
+
+.container .mot:nth-child(1) .box span i{
+    color: #ff246f;
+}
+.container .mot:nth-child(5) .box span i{
+    color: #12b5ff;
+}
+.container .mot:nth-child(6) .box span i{
+    color: #12b5ff;
+}
+.container .mot:nth-child(7) .box span i{
+    color: #12b5ff;
+}
+.container .mot:nth-child(8) .box span i{
+    color: #12b5ff;
+}
+.container .mot:nth-child(9) .box span i{
+    color: #12b5ff;
+}
+
+
+.container .mot:nth-child(1){
+    animation-duration: 10s;
+    animation-delay: 0s;
+}
+.container .mot:nth-child(2){
+    animation-duration: 5s;
+    animation-delay: 1s;
+}
+.container .mot:nth-child(3){
+    animation-duration: 8s;
+    animation-delay: 5s;
+}
+.container .mot:nth-child(4){
+    animation-duration: 11s;
+    animation-delay: 2s;
+}
+.container .mot:nth-child(5){
+    animation-duration: 8s;
+    animation-delay: 4s;
+}
+.container .mot:nth-child(6){
+    animation-duration: 10s;
+    animation-delay: 1s;
+}
+.container .mot:nth-child(7){
+    animation-duration: 8s;
+    animation-delay: 2s;
+}
+.container .mot:nth-child(8){
+    animation-duration: 7s;
+    animation-delay: 1s;
+}
+.container .mot:nth-child(9){
+    animation-duration: 10s;
+    animation-delay: 3s;
+}
+
+
+
+
+
