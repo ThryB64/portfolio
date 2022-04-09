@@ -11,8 +11,17 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #222;
+    background: url(../assets/img/case.jpg) no-repeat center center/cover;
+    
     overflow: hidden;
+}
+.back{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right,black,#303030 45%,black);
+    position: absolute;
+    opacity: 0.9;
+    top: 0;
 }
 .container{
     display: flex;
@@ -53,7 +62,7 @@ body{
     font-weight: 900;
     padding: 0 10px;
     transform-style: preserve-3d;
-    text-shadow: 0 5px 15px rgba(0,0,0,0.25);
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
     
 }
 
@@ -82,31 +91,31 @@ body{
     animation-delay: 0s;
 }
 .container .mot:nth-child(2){
-    animation-duration: 5s;
+    animation-duration: 13s;
     animation-delay: 1s;
 }
 .container .mot:nth-child(3){
-    animation-duration: 8s;
+    animation-duration: 11s;
     animation-delay: 5s;
 }
 .container .mot:nth-child(4){
-    animation-duration: 11s;
+    animation-duration: 14s;
     animation-delay: 2s;
 }
 .container .mot:nth-child(5){
-    animation-duration: 8s;
+    animation-duration: 16s;
     animation-delay: 4s;
 }
 .container .mot:nth-child(6){
-    animation-duration: 10s;
+    animation-duration: 13s;
     animation-delay: 1s;
 }
 .container .mot:nth-child(7){
-    animation-duration: 8s;
+    animation-duration: 12s;
     animation-delay: 2s;
 }
 .container .mot:nth-child(8){
-    animation-duration: 7s;
+    animation-duration: 15s;
     animation-delay: 1s;
 }
 .container .mot:nth-child(9){
